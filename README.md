@@ -22,6 +22,8 @@ O **CharaFun** é uma aplicação web interativa de charadas com estética cyber
 - 🧠 Histórico interno de charadas
 - 🌌 Interface futurista com efeitos de glow
 - ⚡ Loader estilizado ("Carregando dados neurais...")
+![Teste](gifLegal.gif)
+
 
 ## Tecnologias Utilizadas
 - **Linguagem/Frameworks:**
