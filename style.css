@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  /* ... */
+    /* ... */
+}
+@keyframes pulseGlow {
+    0%,
+    100% {
+        box-shadow: 0 0 15px rgba(244, 63, 94, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(244, 63, 94, 0.7);
+    }
 }

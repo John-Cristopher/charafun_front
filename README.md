@@ -7,7 +7,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 **Descrição:**
-O **CharaFun** é uma aplicação web interativa projetada para entreter usuários através de charadas aleatórias. O projeto consome uma API externa para buscar perguntas e respostas, apresentando-as em um card com efeito visual de rotação 3D (flip), onde a resposta permanece oculta até que o usuário interaja com o card.
+O **CharaFun** é uma aplicação web interativa de charadas com estética cyberpunk e elementos de gamificação. O projeto consome uma API externa para buscar perguntas e respostas, apresentando-as em um card com efeito visual de rotação 3D (flip), onde a resposta permanece oculta até que o usuário interaja com o card.
 
 ## Índice
 - [Funcionalidades](#funcionalidades)
@@ -16,10 +16,12 @@ O **CharaFun** é uma aplicação web interativa projetada para entreter usuári
 - [Licença](#licença)
 
 ## Funcionalidades
-- **Busca Aleatória:** Consome a API Charafun para obter charadas de forma dinâmica.
-- **Interface Interativa:** Card com animação 3D que gira ao clicar para revelar a resposta.
-- **Atualização em Tempo Real:** Botão "Nova Charada" que reseta o estado do card e carrega um novo conteúdo sem recarregar a página.
-- **Design Responsivo:** Interface moderna e adaptável para diferentes tamanhos de tela utilizando Tailwind CSS.
+- 🎮 Sistema de pontuação (acertos e erros)
+- 🔊 Feedback sonoro ao virar o card
+- 📳 Vibração em dispositivos móveis
+- 🧠 Histórico interno de charadas
+- 🌌 Interface futurista com efeitos de glow
+- ⚡ Loader estilizado ("Carregando dados neurais...")
 
 ## Tecnologias Utilizadas
 - **Linguagem/Frameworks:**
@@ -30,7 +32,7 @@ O **CharaFun** é uma aplicação web interativa projetada para entreter usuári
 
 ## Autores
 Desenvolvido por alunos do Senai Itapeva:
-- John Senai - [GitHub](https://github.com/) - john.cristopher.senai@gmail.com.br
+- J. Cristopher - [GitHub](https://github.com/) - john.cristopher.senai@gmail.com.br
 <!-- Adicione outros autores se necessário -->
 
 ## Licença

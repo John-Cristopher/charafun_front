@@ -5,38 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Gerador de Charadas</title>
+    <title>CharaFun</title>
 </head>
 
-<body class="bg-rose-200 flex flex-col items-center justify-center min-h-screen p-4">
+<body
+    class="bg-gradient-to-br from-zinc-900 via-rose-900 to-zinc-800 text-white flex flex-col items-center justify-center min-h-screen p-4">
 
-    <h1 class="text-4xl font-medium mb-12 text-zinc-800">Gerador de Charadas</h1>
+    <!-- Status -->
+    <div class="absolute top-4 left-4 text-rose-400 text-xs animate-pulse">
+        ● ONLINE
+    </div>
+
+    <div class="fixed inset-0 bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.2),transparent_70%)] -z-10"></div>
+
+    <h1 class="text-4xl font-bold mb-2 text-rose-400">CharaFun</h1>
+    <p class="text-xs text-rose-300 mb-6">Módulo de charadas carregado</p>
 
     <div class="group w-full max-w-sm [perspective:1000px] h-64">
         <div id="card-inner"
-            class="relative w-full h-full transition-all duration-500 [transform-style:preserve-3d] cursor-pointer shadow-2xl rounded-2xl">
+            class="relative w-full h-full transition-all duration-500 [transform-style:preserve-3d] cursor-pointer rounded-2xl border border-rose-400/30 shadow-[0_0_25px_rgba(244,63,94,0.4)]">
 
             <div
-                class="absolute inset-0 [backface-visibility:hidden] bg-rose-100 rounded-2xl flex flex-col items-center justify-center p-6 text-center border-2 border-zinc-700 shadow-xl/20 shadow-rose-500/50 ">
-                <span class="text-rose-600 font-bold uppercase tracking-widest text-xs mb-2">Pergunta</span>
-                <p id="pergunta" class="text-xl font-medium text-gray-800 italic">Carregando charada...</p>
-                <p class="mt-4 text-gray-400 text-xs font-light ">Clique para ver a resposta</p>
+                class="absolute inset-0 [backface-visibility:hidden] bg-zinc-800 rounded-2xl flex flex-col items-center justify-center p-6 text-center">
+                <span class="text-rose-400 font-bold uppercase tracking-widest text-xs mb-2">Pergunta</span>
+                <p id="pergunta" class="text-xl italic text-rose-200 animate-pulse">Carregando dados neurais...</p>
+                <p class="mt-4 text-gray-400 text-xs">Clique para revelar</p>
             </div>
 
             <div
                 class="absolute inset-0 [backface-visibility:hidden] bg-rose-500 rounded-2xl flex flex-col items-center justify-center p-6 text-center text-white [transform:rotateY(180deg)]">
-                <span class="text-rose-100 font-bold uppercase tracking-widest text-xs mb-2 ">Resposta</span>
+                <span class="text-rose-100 font-bold uppercase tracking-widest text-xs mb-2">Resposta</span>
                 <p id="resposta" class="text-2xl font-bold"></p>
             </div>
 
         </div>
     </div>
 
-    <button id="btn-nova"
-        class="mt-8 bg-rose-600 hover:bg-rose-500 text-white font-bold py-3 px-8 rounded-full transition-transform active:scale-95 shadow-lg">
-        Nova Charada 🎲
+    <!-- Ações -->
+    <div class="mt-4 flex gap-2" id="acoes">
+        <button onclick="acertou()" class="bg-green-500 px-4 py-2 rounded">✔ Acerto</button>
+        <button onclick="errou()" class="bg-red-500 px-4 py-2 rounded">✖ Erro</button>
+    </div>
+
+    <!-- Botão continuar -->
+    <button id="btn-continuar" onclick="continuar()" class="hidden mt-4 bg-blue-500 px-6 py-2 rounded">
+        Continuar ▶
     </button>
 
+    <div class="mt-6 text-sm text-rose-200">
+        Pontos: <span id="pontos">0</span> | Combo: <span id="combo">0</span>
+    </div>
+
+    <button id="btn-nova"
+        class="mt-6 bg-rose-600 hover:bg-rose-500 text-white font-bold py-3 px-8 rounded-full transition-transform active:scale-95 shadow-lg">
+        Nova Charada 🎲
+    </button>
 
 </body>
 
