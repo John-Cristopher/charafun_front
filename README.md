@@ -22,6 +22,8 @@ O **CharaFun** é uma aplicação web interativa de charadas com estética cyber
 - 🧠 Histórico interno de charadas
 - 🌌 Interface futurista com efeitos de glow
 - ⚡ Loader estilizado ("Carregando dados neurais...")
+![Teste](gifLegal.gif)
+
 
 ## Tecnologias Utilizadas
 - **Linguagem/Frameworks:**
@@ -36,7 +38,7 @@ Desenvolvido por alunos do Senai Itapeva:
 <!-- Adicione outros autores se necessário -->
 
 ## Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a Licença MIT.
 
 ---
 
@@ -44,3 +46,6 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para m
 1. Clone o repositório.
 2. Abra o arquivo `index.html` em seu navegador de preferência.
 3. Certifique-se de estar conectado à internet para que a API possa carregar as charadas.
+
+### Acesse por aqui!
+[Charafun](https://charafun-front.vercel.app/)
