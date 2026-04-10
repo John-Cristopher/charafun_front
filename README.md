@@ -35,7 +35,7 @@ O **CharaFun** é uma aplicação web interativa de charadas com estética cyber
 
 ## Autores
 Desenvolvido por alunos do Senai Itapeva:
-- J. Cristopher - [GitHub](https://github.com/) - john.cristopher.senai@gmail.com.br
+- J. Cristopher - [GitHub](https://github.com/John-Cristopher) - john.cristopher.senai@gmail.com.br
 ---
 
 ### Como executar o projeto
